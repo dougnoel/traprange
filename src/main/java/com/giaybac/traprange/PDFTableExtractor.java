@@ -97,8 +97,8 @@ public class PDFTableExtractor {
     /**
      * This page will be analyze and extract its table content
      *
-     * @param pageIdx
-     * @return
+     * @param pageIdx int
+     * @return PDFTableExtractor
      */
     public PDFTableExtractor addPage(int pageIdx) {
         extractedPages.add(pageIdx);
@@ -114,9 +114,9 @@ public class PDFTableExtractor {
      * Avoid a specific line in a specific page. LineIdx can be negative number,
      * -1 is the last line
      *
-     * @param pageIdx
-     * @param lineIdxs
-     * @return
+     * @param pageIdx int
+     * @param lineIdxs int[]
+     * @return PDFTableExtractor
      */
     public PDFTableExtractor exceptLine(int pageIdx, int[] lineIdxs) {
         for (int lineIdx : lineIdxs) {
@@ -129,8 +129,8 @@ public class PDFTableExtractor {
      * Avoid this line in all extracted pages. LineIdx can be negative number,
      * -1 is the last line
      *
-     * @param lineIdxs
-     * @return
+     * @param lineIdxs int[]
+     * @return PDFTableExtractor
      */
     public PDFTableExtractor exceptLine(int[] lineIdxs) {
         this.exceptLine(-1, lineIdxs);

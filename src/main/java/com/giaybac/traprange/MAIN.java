@@ -27,14 +27,14 @@ public class MAIN {
 	private static final Logger logger = LogManager.getLogger(MAIN.class);
 
     /**
-     * -in: source <br/>
-     * -out: target  <br/>
-     * -el: except lines. Ex: 1,2,3-1,6@8 #line 6 in page 8  <br/>
-     * -p: page  <br/>
-     * -ep: except page <br/>
+     * -in: source 
+     * -out: target 
+     * -el: except lines. Ex: 1,2,3-1,6@8 #line 6 in page 8 
+     * -p: page 
+     * -ep: except page 
      * -h: help
      *
-     * @param args
+     * @param args String[]
      */
     public static void main(String[] args) {
         if (args.length == 1 && "-h".equals(args[0])) {

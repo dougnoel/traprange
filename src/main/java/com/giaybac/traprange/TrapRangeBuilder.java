@@ -39,7 +39,7 @@ public class TrapRangeBuilder {
     /**
      * The result will be ordered by lowerEndpoint ASC
      *
-     * @return
+     * @return List&lt;Range&lt;Integer&gt;&gt;
      */
     public List<Range<Integer>> build() {
         List<Range<Integer>> retVal = new ArrayList<>();
